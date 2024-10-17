@@ -1,2 +1,7 @@
 -- copy this and paste it in executor.
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sitiosweb24/Chat-Thingy-GUI-FE-Script/refs/heads/main/newchat.lua"))()
+local tcs = game:GetService("TextChatService")
+if tcs.ChatVersion == "LegacyChatService" then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/sitiosweb24/Chat-Thingy-GUI-FE-Script/refs/heads/main/textchatservice.lua"))()
+elseif tcs.ChatVersion == "TextChatService" then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/sitiosweb24/Chat-Thingy-GUI-FE-Script/refs/heads/main/oldchatservice.lua"))()
+end
