@@ -2,7 +2,7 @@
 
 -- Instances:
 
-local chatthingyguiOLDCHAT = Instance.new("ScreenGui")
+local chatthingyguiNEWCHAT = Instance.new("ScreenGui")
 local loaderxploits = Instance.new("Frame")
 local stroke = Instance.new("UIStroke")
 local corner = Instance.new("UICorner")
@@ -53,13 +53,14 @@ local corner_10 = Instance.new("UICorner")
 
 --Properties:
 
-chatthingyguiOLDCHAT.Name = "chat.thingy.gui [OLD CHAT]"
-chatthingyguiOLDCHAT.Parent = game:GetService("CoreGui")
-chatthingyguiOLDCHAT.ResetOnSpawn = false
-chatthingyguiOLDCHAT.DisplayOrder = 999999999
+chatthingyguiNEWCHAT.Name = "chat.thingy.gui [NEW CHAT]"
+chatthingyguiNEWCHAT.Parent = game:GetService("CoreGui")
+chatthingyguiNEWCHAT.ResetOnSpawn = false
+chatthingyguiNEWCHAT.Enabled = false
+chatthingyguiNEWCHAT.DisplayOrder = 999999999
 
 loaderxploits.Name = "loader (xploits)"
-loaderxploits.Parent = chatthingyguiOLDCHAT
+loaderxploits.Parent = chatthingyguiNEWCHAT
 loaderxploits.Active = true
 loaderxploits.AnchorPoint = Vector2.new(0.5, 0.5)
 loaderxploits.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
@@ -98,7 +99,7 @@ stroke_2.Parent = TextLabel
 stroke_2.Thickness = 2.600
 
 mainmighty.Name = "main (mighty)"
-mainmighty.Parent = chatthingyguiOLDCHAT
+mainmighty.Parent = chatthingyguiNEWCHAT
 mainmighty.AnchorPoint = Vector2.new(0.5, 0.5)
 mainmighty.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainmighty.BackgroundTransparency = 1.000
@@ -215,7 +216,7 @@ corner_6.Name = "corner"
 corner_6.Parent = mainmighty
 
 ksystemmightyflea.Name = "ksystem (mightyflea)"
-ksystemmightyflea.Parent = chatthingyguiOLDCHAT
+ksystemmightyflea.Parent = chatthingyguiNEWCHAT
 ksystemmightyflea.AnchorPoint = Vector2.new(0.5, 0.5)
 ksystemmightyflea.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 ksystemmightyflea.BackgroundTransparency = 0.100
@@ -373,8 +374,8 @@ corner_10.Parent = gkey
 
 -- Scripts:
 
--- chatthingyguiOLDCHAT.[DISABLED] Credits is disabled.
-local function EDOP_script() -- loaderxploits.loader 
+-- chatthingyguiNEWCHAT.[DISABLED] Credits is disabled.
+local function WOKD_script() -- loaderxploits.loader 
 	local script = Instance.new('LocalScript', loaderxploits)
 
 	local TweenService = game:GetService("TweenService")
@@ -421,8 +422,8 @@ local function EDOP_script() -- loaderxploits.loader
 	frame.Visible = false
 	mainframe.Visible = true
 end
-coroutine.wrap(EDOP_script)()
-local function JZTUD_script() -- loaderxploits.notify 
+coroutine.wrap(WOKD_script)()
+local function TKQCRR_script() -- loaderxploits.notify 
 	local script = Instance.new('LocalScript', loaderxploits)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -437,9 +438,9 @@ local function JZTUD_script() -- loaderxploits.notify
 	task.wait(1)
 	notify("Loading!", "Chat Thingy - Mightyfleaaa", 3) -- 3-second notification
 end
-coroutine.wrap(JZTUD_script)()
-local function FLEJS_script() -- chatthingyguiOLDCHAT.mscript 
-	local script = Instance.new('LocalScript', chatthingyguiOLDCHAT)
+coroutine.wrap(TKQCRR_script)()
+local function VKSQ_script() -- chatthingyguiNEWCHAT.NewChatScript 
+	local script = Instance.new('LocalScript', chatthingyguiNEWCHAT)
 
 	repeat task.wait() until game:IsLoaded(true)
 	local gui = script.Parent
@@ -574,8 +575,8 @@ local function FLEJS_script() -- chatthingyguiOLDCHAT.mscript
 		checkKey()
 	end)
 end
-coroutine.wrap(FLEJS_script)()
-local function CAZFQKL_script() -- mainmighty.drag 
+coroutine.wrap(VKSQ_script)()
+local function WYKNUP_script() -- mainmighty.drag 
 	local script = Instance.new('LocalScript', mainmighty)
 
 	local UIS = game:GetService('UserInputService')
@@ -613,8 +614,8 @@ local function CAZFQKL_script() -- mainmighty.drag
 		end
 	end)
 end
-coroutine.wrap(CAZFQKL_script)()
-local function BUQVV_script() -- ksystemmightyflea.drag 
+coroutine.wrap(WYKNUP_script)()
+local function CWNX_script() -- ksystemmightyflea.drag 
 	local script = Instance.new('LocalScript', ksystemmightyflea)
 
 	local UIS = game:GetService('UserInputService')
@@ -652,8 +653,8 @@ local function BUQVV_script() -- ksystemmightyflea.drag
 		end
 	end)
 end
-coroutine.wrap(BUQVV_script)()
-local function AZAKRH_script() -- ksystemmightyflea.notify 
+coroutine.wrap(CWNX_script)()
+local function YWVDZRK_script() -- ksystemmightyflea.notify 
 	local script = Instance.new('LocalScript', ksystemmightyflea)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -668,8 +669,8 @@ local function AZAKRH_script() -- ksystemmightyflea.notify
 		
 	end)
 end
-coroutine.wrap(AZAKRH_script)()
-local function MUKUT_script() -- ksystemmightyflea.LocalScript 
+coroutine.wrap(YWVDZRK_script)()
+local function FYAN_script() -- ksystemmightyflea.LocalScript 
 	local script = Instance.new('LocalScript', ksystemmightyflea)
 
 	if script.Parent.Visible == false then
@@ -678,4 +679,5 @@ local function MUKUT_script() -- ksystemmightyflea.LocalScript
 		script.Parent.Visible = true
 	end
 end
-coroutine.wrap(MUKUT_script)()
+coroutine.wrap(FYAN_script)()
+-- chatthingyguiNEWCHAT.OldChatScript is disabled.
