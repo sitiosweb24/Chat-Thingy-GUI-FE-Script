@@ -54,7 +54,8 @@ local corner_10 = Instance.new("UICorner")
 --Properties:
 
 chatthingygui.Name = "chat.thingy.gui [NEW CHAT]"
-chatthingygui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+h.Parent = game:GetService("CoreGui")
+h.ResetOnSpawn = false
 chatthingygui.DisplayOrder = 999999999
 
 loaderxploits.Name = "loader (xploits)"
