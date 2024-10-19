@@ -2,7 +2,7 @@
 
 -- Instances:
 
-local chatthingygui = Instance.new("ScreenGui")
+local chatthingyguiOLDCHAT = Instance.new("ScreenGui")
 local loaderxploits = Instance.new("Frame")
 local stroke = Instance.new("UIStroke")
 local corner = Instance.new("UICorner")
@@ -53,13 +53,13 @@ local corner_10 = Instance.new("UICorner")
 
 --Properties:
 
-chatthingygui.Name = "chat.thingy.gui [NEW CHAT]"
-h.Parent = game:GetService("CoreGui")
-h.ResetOnSpawn = false
-chatthingygui.DisplayOrder = 999999999
+chatthingyguiOLDCHAT.Name = "chat.thingy.gui [OLD CHAT]"
+chatthingyguiOLDCHAT.Parent = game:GetService("CoreGui")
+chatthingyguiOLDCHAT.ResetOnSpawn = false
+chatthingyguiOLDCHAT.DisplayOrder = 999999999
 
 loaderxploits.Name = "loader (xploits)"
-loaderxploits.Parent = chatthingygui
+loaderxploits.Parent = chatthingyguiOLDCHAT
 loaderxploits.Active = true
 loaderxploits.AnchorPoint = Vector2.new(0.5, 0.5)
 loaderxploits.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
@@ -98,7 +98,7 @@ stroke_2.Parent = TextLabel
 stroke_2.Thickness = 2.600
 
 mainmighty.Name = "main (mighty)"
-mainmighty.Parent = chatthingygui
+mainmighty.Parent = chatthingyguiOLDCHAT
 mainmighty.AnchorPoint = Vector2.new(0.5, 0.5)
 mainmighty.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainmighty.BackgroundTransparency = 1.000
@@ -215,7 +215,7 @@ corner_6.Name = "corner"
 corner_6.Parent = mainmighty
 
 ksystemmightyflea.Name = "ksystem (mightyflea)"
-ksystemmightyflea.Parent = chatthingygui
+ksystemmightyflea.Parent = chatthingyguiOLDCHAT
 ksystemmightyflea.AnchorPoint = Vector2.new(0.5, 0.5)
 ksystemmightyflea.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 ksystemmightyflea.BackgroundTransparency = 0.100
